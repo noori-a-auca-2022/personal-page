@@ -1,0 +1,70 @@
+body {
+    font-family: Trebuchet MS;
+    }
+    #header {
+    background-color: dimgray;
+    }
+    
+    #header {
+        height: 2.5rem;
+      }
+      #header {
+        border-bottom: 2.5rem solid LightSeaGreen;
+        }
+    
+    
+        h1 {
+            font-size: 1.5rem;
+          }
+          h1 {
+            color: white;
+          }
+    
+    
+          #title {
+            height: 28.5rem;
+          }
+          #title {
+            background-color: lightgray;
+          }
+          #title {
+            text-align: center;
+          }
+    
+          * {
+            margin: 0;
+          }
+    
+          #about {
+            display: flex;
+            }
+    
+          #about img {
+            height: 17rem;
+            }
+    
+            h3 {
+            color: LightSeaGreen;
+         }
+         h3 {
+            width: 13.5rem;
+         }
+         h3 {
+            margin: 0 auto;
+         }
+    
+         h3 {
+            text-align: center;
+         }
+         h3 {
+            padding-top: 2.5rem;
+         }
+    
+         #fav {
+            display: flex;
+         }
+         #fav {
+            display: flex;
+            justify-content: space-evenly;
+         }
+    
