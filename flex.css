@@ -1,0 +1,51 @@
+* {
+ margin: 0;
+ box-sizing: border-box;
+}
+body {
+background: url("https://cdn.imgchest.com/files/pyvdcd6loyk.png"); 
+opacity: .5;
+background-repeat: no-repeat;
+}
+.container {
+max-width: 1400px;
+}
+.container > * {
+background-color: lightblue;
+font-size: 10rem;
+ color: blue;
+ border: 2px dashed blue;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.container > * {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+ .box1{
+flex-basis: 486px;
+}
+
+.box3{
+flex-basis: 1400px;
+}
+
+.box4{
+    flex-basis: 250px;
+    }
+
+.box5{
+    flex-basis: 500px;
+}
+
+.box6{
+    flex: basis 750px;
+}
