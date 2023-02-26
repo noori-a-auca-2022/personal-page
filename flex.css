@@ -9,29 +9,27 @@ background-repeat: no-repeat;
 }
 .container {
 max-width: 1400px;
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
 }
 .container > * {
 background-color: lightblue;
 font-size: 10rem;
  color: blue;
  border: 2px dashed blue;
+ flex-shrink: 0;
+ flex-grow: 1;
+ height: 198px;
 }
 
-.container {
-    max-width: 1400px;
-    display: flex;
-    gap: 20px;
-    justify-content: start;
-    flex-wrap: wrap;
-}
-
-.container > * {
-    flex-shrink: 0;
-    flex-grow: 1;
-}
 
  .box1{
-flex-basis: 486px;
+flex-basis: 450px;
+}
+
+.box2{
+    flex-basis: 50px;
 }
 
 .box3{
@@ -39,13 +37,13 @@ flex-basis: 1400px;
 }
 
 .box4{
-    flex-basis: 250px;
+    flex-basis: 35px;
     }
 
 .box5{
-    flex-basis: 500px;
+    flex-basis: 50px;
 }
 
 .box6{
-    flex: basis 750px;
+    flex-basis: 650px;
 }
