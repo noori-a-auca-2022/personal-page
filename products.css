@@ -1,0 +1,141 @@
+.container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex: 1 0 25%;
+
+}
+
+.container > *{
+    flex-basis: 200px;
+    border: 2px solid firebrick;
+    flex-grow: 1;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row; 
+    gap: .5rem;
+    flex-wrap: wrap;
+    }
+    
+ ul > * {
+    background: lightpink;
+    padding: .5rem;
+    } 
+
+ .info {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 1rem;
+    }
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.box2 > .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.box3 > .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.box3 > .info {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.box5 > .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.box5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.box5 > .info {
+  display: flex;
+  justify-content: center;
+}
+
+.box4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.box4 > .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 {
+    display: flex
+}
+
+.box2 ul {
+    display: flex;
+    justify-content: space-evenly; 
+  }
+  
+
+  .box4 ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .box1 ul {
+    display: flex;
+    justify-content: flex-end; 
+  }
+  
+   .box5 ul {
+    display: flex;
+    justify-content: space-between; 
+  }
+ 
+  .box3 ul {
+    display: flex;
+    justify-content: space-around; 
+  }
+  
+
+  .box3 ul > * {
+    flex-grow: 1; 
+  }
+
+  button {
+  background-color: firebrick; /* add background color of "firebrick" */
+  padding: .5rem; /* add .5rem padding in all directions */
+  border: none; /* remove border */
+  width: 100%; /* set width to "100%" */
+  color: white; /* change color to "white" */
+}
