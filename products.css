@@ -35,69 +35,53 @@ ul {
     }
 
 .box2 {
-  display: flex;
   flex-direction: column;
 }
 
 .box2 > .info {
-  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .box3 {
-  display: flex;
   flex-direction: column;
 }
 
 .box3 > .info {
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .box3 {
-  display: flex;
   flex-direction: column;
 }
 
 .box3 > .info {
-  display: flex;
   justify-content: flex-end;
 }
 
 .box5 {
-  display: flex;
   flex-direction: column;
 }
 
 .box5 > .info {
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 .box5 {
-  display: flex;
   flex-direction: column;
 }
 
 .box5 > .info {
-  display: flex;
   justify-content: center;
 }
 
 .box4 {
-  display: flex;
   flex-direction: column;
 }
 
 .box4 > .info {
-  display: flex;
   justify-content: space-between;
-}
-
-.box1 {
-    display: flex
 }
 
 .box2 ul {
