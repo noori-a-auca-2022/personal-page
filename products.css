@@ -1,3 +1,31 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+ }
+ body {
+  font-family: tahoma;
+ }
+ .image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+ }
+ .box1 .image {
+  background-image: url("https://unsplash.it/300/200?1");
+ }
+ .box2 .image {
+  background-image: url("https://unsplash.it/300/200?2");
+ }
+ .box3 .image {
+  background-image: url("https://unsplash.it/300/200?3");
+ }
+ .box4 .image {
+  background-image: url("https://unsplash.it/500/200?4");
+ }
+ .box5 .image {
+  background-image: url("https://unsplash.it/800/200?5");
+ }
+ 
 .container{
     display: flex;
     gap: 1rem;
