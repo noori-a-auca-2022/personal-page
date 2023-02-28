@@ -145,9 +145,9 @@ ul {
   }
 
   button {
-  background-color: firebrick; /* add background color of "firebrick" */
-  padding: .5rem; /* add .5rem padding in all directions */
-  border: none; /* remove border */
-  width: 100%; /* set width to "100%" */
-  color: white; /* change color to "white" */
-}
+  background-color: firebrick; 
+  padding: .5rem; 
+  border: none; 
+  width: 100%; 
+  color: white; 
+  }
