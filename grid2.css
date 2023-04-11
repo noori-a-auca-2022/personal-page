@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-image: url(https://cdn.imgchest.com/files/my8xckdzm4l.png);
+    background-repeat: no-repeat;
+    max-width: 988px;
+    min-height: 1026px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+    
+}
+ul{
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+    line-height: 1.42857143;
+    color: #333;
+    padding-top: 82px ;
+    padding-left: 10px;
+    gap: 15px;
+    }
+
+.container > * {
+    border: 2px dashed blue; 
+}
+
+.container{
+    display: grid;
+    grid-template-rows: minmax(135px, auto) minmax(270px, auto) minmax(126.6px, auto) minmax(328.2px, auto) minmax(165.8px, auto); 
+    grid-template-columns: minmax(20px,91px) minmax(20px, 401px) minmax(20px, 223px) minmax(20px, 268px);
+    grid-template-areas:
+    "one two two two"
+    "three three three three"
+    "four four four four"
+    "five five six seven"
+    "eight eight eight eight"
+    ;
+    
+}
+
+    .box1 {
+    grid-area: one; 
+    }
+    .box2 {
+    grid-area: three;
+    }
+    .box3 {
+    grid-area: four;
+    }
+    .box4 {
+    grid-area: five;
+    }
+    .box5 {
+    grid-area: eight;
+    }
+    .box6 {
+    grid-area: two;
+    }
+    .box7 {
+        grid-area: six;
+    }
+    .box8{
+        grid-area:seven;
+    }
+
+ 
