@@ -20,12 +20,12 @@ ul{
     list-style-type: none;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
-    background-color: #fff;
     line-height: 1.42857143;
     color: #333;
-    padding-top: 82px ;
-    padding-left: 10px;
-    gap: 15px;
+    padding-top: 41px;
+    margin-top: 41px;
+    padding-left: 16px;
+    gap: 21.5px;
     }
 
 .container > * {
@@ -43,7 +43,21 @@ ul{
     "five five six seven"
     "eight eight eight eight"
     ;
-    
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight";
+    }
 }
 
     .box1 {
