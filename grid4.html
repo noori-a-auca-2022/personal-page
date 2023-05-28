@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="grid2.css"> 
+    <link rel="stylesheet" href="grid3.css" class="style">
+    <link rel="stylesheet" href="grid4.css" class="style">
+</head>
+<body>
+    <body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <img src='https://cdn.imgchest.com/files/6yxkcg9dp7w.png' style='position: absolute; top:0; left:0;z-index:-1'>
+    <div class="container">
+        <div class="box1"> 
+            <img src='https://th.bing.com/th/id/OIG.9ggw1qG0wqwYq0nA4lnr?pid=ImgGn.png' style="width:18%; height: auto;">
+        </div>
+        <div class="box2"> 
+             <h1> acts adopted on court cases </h1></div>
+        <div class="box3">3</div>
+        <div class="box4">4 </div>
+        <div class="box5">5</div>
+        <div class="box6"> 
+            <ul>
+              <li>Main page</li>
+              <li>The news</li>
+              <li>Resolutions of the Plenum of the Supreme Court of the Kyrgyz Republic</li>
+              <li>Information</li>
+              <li>Service entry</li>
+            </ul>
+        </div>
+        <div class="box7">7</div>
+        <div class="box8">8</div>
+
+        <script>
+            function switchStyle() {
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'grid4.css') {
+            style.setAttribute('href', 'grid2.css');
+            } else {
+            style.setAttribute('href', 'grid4.css');
+            }
+            }
+            </script>
+            </body> 
+            
+    </div>
+    <script>
+        function switchStyle() {
+        let style = document.querySelector('.style');
+        if (style.getAttribute('href') == 'grid3.css') {
+        style.setAttribute('href', 'grid2.css');
+        } else {
+        style.setAttribute('href', 'grid3.css');
+        }
+        }
+        </script>
+        </body> 
+        
+</body>
+</html>
