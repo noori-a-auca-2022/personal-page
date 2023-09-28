@@ -25,10 +25,7 @@ body {
 body > img:nth-of-type(1) {
     display: none;
    }
- body {
-    background-image: none;
-    opacity: 1;
-   }
+
    
 ul{
 
@@ -56,8 +53,8 @@ ul{
     grid-template-areas:
     "one one one one"
     "two three three three"
-    "four five five five"
-    "four six six six"
+    "five four four four"
+    "five six six six"
     "seven seven seven seven"
     "eight eight eight eight"
     ;
