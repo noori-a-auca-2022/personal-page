@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="grid2.css"> 
+    <link rel="stylesheet" href="grid3.css" class="style">
+    <link rel="stylesheet" href="grid4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <div class="container">
+        <div class="box1"> 
+            <img src="https://th.bing.com/th/id/OIG.9ggw1qG0wqwYq0nA4lnr?pid=ImgGn.png" alt="scale">
+        </div>
+        <div class="box2"> 
+             <h1>Acts Adopted on Court Cases</h1>
+        </div>
+
+        <div class="box3"> 
+                <div class= "fa fa-user fa-fw" style="color: #fbeb9d; font-size: 100px"></div>
+                <div class="context">
+                <h2>sessions</h2>
+                <h3>search for court hearings</h3>
+        </div>
+        </div>
+
+        <div class="box4">
+        </div>
+        <div class="box5">5</div>
+        <div class="box6"> 
+            <ul>
+              <li>Main page</li>
+              <li>The news</li>
+              <li>Resolutions of the Plenum of the Supreme Court of the Kyrgyz Republic</li>
+              <li>Information</li>
+              <li>Service entry</li>
+            </ul>
+        </div>
+        <div class="box7">
+            <div class="fa fa-suitcase" style="color: #fbeb9d; font-size: 100px"></div>
+        </div>
+        <div class="box8">8</div>
+    </div>
+    <script>
+        function switchStyle() {
+        let style = document.querySelector('.style');
+        if (style.getAttribute('href') == 'grid4.css') {
+        style.setAttribute('href', 'grid2b.css');
+        } else {
+        style.setAttribute('href', 'grid4.css');
+        }
+        }
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://cdn.imgchest.com/files/my8xckdzm4l.png);
+    background-repeat: no-repeat;
+    max-width: 988px;
+    min-height: 1026px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    padding-top: 41px;
+    margin-top: 41px;
+    padding-left: 16px;
+    gap: 21.5px;
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+.container {
+    display: flex;
+    display: grid;
+    grid-template-rows: minmax(135px, auto) minmax(270px, auto) minmax(126.6px, auto) minmax(328.2px, auto) minmax(165.8px, auto);
+    grid-template-columns: minmax(20px, 91px) minmax(20px, 401px) minmax(20px, 223px) minmax(20px, 268px);
+    grid-template-areas:
+        "one two two two"
+        "three three three three"
+        "four four four four"
+        "five five six seven"
+        "eight eight eight eight"
+    ;
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven"
+            "eight";
+    }
+}
+
+.box1 {
+    grid-area: one;
+}
+
+.box2 {
+    grid-area: three;
+}
+
+.box3 {
+    grid-area: four;
+}
+
+.box3 h2 {
+    color: #333333 !important;
+}
+
+.box3 h3 {
+    color: #8c8c8c;
+    font-size: 9px;
+    margin: 0;
+}
+
+.box4 {
+    grid-area: five;
+}
+
+.box5 {
+    grid-area: eight;
+}
+
+.box6 {
+    grid-area: two;
+}
+
+.box7 {
+    grid-area: six;
+}
+
+.box8 {
+    grid-area: seven;
+}
+
+.container .box3 {
+    grid-area: four;
+    display: flex;
+    align-items: center;
+}
+
+.container .box3 .fa-user {
+    margin-right: 20px;
+}
+
+.container .box3 .context {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .box3 h2 {
+    color: #333333 !important;
+    margin: 0;
+}
+
+.container .box3 h3 {
+    color: #8c8c8c;
+    font-size: 9px;
+    margin: 0;
+}
