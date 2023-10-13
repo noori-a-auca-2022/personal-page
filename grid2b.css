@@ -65,11 +65,11 @@ ul{
     grid-area: one; 
     }
  
-.box1 img{
-  max-width: 100%;
-  height: 120px;
-  display: flex;
-}
+    .box1 img{
+    max-width: 100%;
+    height: 120px;
+    display: flex;
+    }
 
     .box2 {
     grid-area: three;
@@ -77,14 +77,107 @@ ul{
     background-size: cover;
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 150px;
     background-blend-mode: multiply;
     background-color: grey; 
     }
+
+    .options{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+     
+    .box2 h1 {
+        color: rgb(250, 215, 57);
+        font-size: 35px;       
+        margin-bottom: 5px;
+    }
+
+    .box2 h2 {
+        color: rgb(244, 244, 244);
+        font-size: 20px; 
+        margin: 0;
+    }
+
     .box3 {
-    grid-area: four;
+        grid-area: four;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+    }
+    .both-boxes {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .user-box {
+        display: flex;
+        border: 2px solid #000000; 
+        border-radius: 10px; 
+        padding-left: 20px; 
+        padding-right: 20px; 
+        margin-right: 180px;
+    }
+
+    .box3 .fa.fa-user.fa-fw {
+        color: #e5bc3d;
+        font-size: 85px;
+    }
+    
+    .box3 h2 {
+        font-size: 25px;
+        text-align: center;
+        color: black;
+    }
+    
+    .box3 h3 {
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        font-family: roboto;
+        margin-top: 0;
+    }
+    
+    .suitcase-box{
+        display: flex;
+        border: 2px solid #000000; 
+        border-radius: 10px; 
+        padding-left: 20px; 
+        padding-right: 20px; 
+        
+    }
+
+    .texts {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+
+    }
+    .box3 .fa.fa-suitcase {
+        color: #e5bc3d;
+        font-size: 85px;
+    }
+    
+    .box3 h2 {
+        font-size: 25px;
+        text-align: center;
+        color: black;
+        font-family: inherit;
+        
+    }
+    
+    .box3 h3 {
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        font-family: inherit;
     }
     .box4 {
     grid-area: five;
@@ -94,33 +187,48 @@ ul{
     }
     .box6 {
     grid-area: two;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    margin-top: 0px;
     }
+    
+    .headings {
+    display: flex;
+    flex-direction: row;
+}
+
+    .headings h2 {
+    font-size: 20px;
+    color: white; 
+    background-color: #e5bc3d; 
+    border: 2px solid #e5bc3d; 
+    padding: 10px; 
+    border-radius: 10px; 
+}
+
+    .headings h3 {
+    color: rgb(15, 14, 14);
+    padding-left: 20px;
+    font-size: 30px;
+
+}
+    .box6 h1 {
+        padding-right: 370px;
+        color: rgb(15, 14, 14);
+        font-size: 35px;
+        padding-left: 10px;
+        padding-bottom: 0;
+        margin-bottom: 0;    
+    }
+    
+    .box6 ul {
+        margin-top: 0; 
+        padding-top: 0; 
+    }
+    
     .box7 {
         grid-area: six;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-    }
-    .box7 .fa.fa-user.fa-fw {
-        color: #e5bc3d;
-        font-size: 150px; 
-    }
-    
-    .box7 h2 {
-        font-size: 25px; 
-        text-align: center;
-        color: black;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-family: inherit;
-    }
-    
-    .box7 h3 {
-        font-size: 15px; 
-        text-align: center;
-        color: black;
-        font-family: roboto;
-        font-family: inherit;
     }
 
     .box8{
@@ -131,24 +239,4 @@ ul{
         justify-content: start;
     }
 
-    
-    .box8 .fa.fa-suitcase {
-        color: #e5bc3d;
-        font-size: 150px;
-    }
-    
-    .box8 h2 {
-        font-size: 25px;
-        text-align: center;
-        color: black;
-        font-family: inherit;
-        
-    }
-    
-    .box8 h3 {
-        font-size: 15px;
-        text-align: center;
-        color: black;
-        font-family: inherit;
-    }
     
