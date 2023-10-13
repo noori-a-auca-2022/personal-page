@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+img:nth-of-type(1) {
+    display: block;
+   }
+    
+  
+body {
+    max-width: 988px;
+    min-height: 1026px;
+    font-size: 2rem;
+    opacity: 1;
+    
+}
+
+body > img:nth-of-type(1) {
+    display: block;
+   }
+
+   
+ul{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    background-color:darkgoldenrod; 
+    line-height: 1.42857143;
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container > * {
+    border: 2px dashed blue; 
+}
+
+.container{
+    display: grid;
+    grid-template-rows: minmax(135px, auto) minmax(270px, auto) minmax(126.6px, auto) minmax(328.2px, auto) minmax(165.8px, auto); 
+    grid-template-columns: minmax(300px,91px) minmax(20px, 401px) minmax(20px, 223px) minmax(20px, 268px);
+    grid-template-areas:
+    "one one one one"
+    "two three three three"
+    "five four four four"
+    "five six six six"
+    "seven seven seven seven"
+    "eight eight eight eight"
+    ;
+    
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight";
+    }
+}
+
+    .box1 {
+    grid-area: one;   
+      max-width: 100%;
+        height: auto; 
+        display: flex;
+        flex-direction: row;
+
+      }
+      .box1 img{
+        max-width: 100%;
+        height: 120px;
+        display: flex;
+      }
+      .headings {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+        .headings h2 {
+        font-size: 20px;
+        color: white; 
+        background-color: #e5bc3d; 
+        border: 2px solid #e5bc3d; 
+        padding: 10px; 
+        border-radius: 10px; 
+    }
+    
+        .headings h3 {
+        color: rgb(15, 14, 14);
+        padding-left: 0;
+        font-size: 30px;
+    
+    }
+        .box1 h1 {
+            padding-right: 440px;
+            color: rgb(15, 14, 14);
+            font-size: 25px;
+            padding-left: 10px;
+            padding-bottom: 0;
+            margin-bottom: 0;    
+        }
+        
+        .box1 ul {
+            margin-top: 0; 
+            padding-top: 0; 
+        }
+    
+    
+    .box2 {
+    grid-area: three;
+    background-image: url('http://act.sot.kg/img/acts.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    background-blend-mode: multiply;
+    background-color: grey; 
+    }
+
+    .options{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+     
+    .box2 h1 {
+        color: rgb(250, 215, 57);
+        font-size: 35px;       
+        margin-bottom: 5px;
+    }
+
+    .box2 h2 {
+        color: rgb(244, 244, 244);
+        font-size: 20px; 
+        margin: 0;
+    }
+       
+    .box3 {
+        grid-area: four;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+    }
+    .both-boxes {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .user-box {
+        display: flex;
+        border: 2px solid #000000; 
+        border-radius: 10px; 
+        padding-left: 20px; 
+        padding-right: 20px; 
+        margin-right: 70px;
+    }
+
+    .box3 .fa.fa-user.fa-fw {
+        color: #e5bc3d;
+        font-size: 85px;
+    }
+    
+    .box3 h2 {
+        font-size: 25px;
+        text-align: center;
+        color: black;
+    }
+    
+    .box3 h3 {
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        font-family: roboto;
+        margin-top: 0;
+    }
+    
+    .suitcase-box{
+        display: flex;
+        border: 2px solid #000000; 
+        border-radius: 10px; 
+        padding-left: 20px; 
+        padding-right: 20px; 
+        
+    }
+
+    .texts {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+
+    }
+    .box3 .fa.fa-suitcase {
+        color: #e5bc3d;
+        font-size: 85px;
+    }
+    
+    .box3 h2 {
+        font-size: 25px;
+        text-align: center;
+        color: black;
+        font-family: inherit;
+        
+    }
+    
+    .box3 h3 {
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        font-family: inherit;
+    }
+
+    .box4 {
+        grid-area: five;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box4 ul {
+        background: none;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+    
+    .box4 .image-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin: 10px;
+    }
+    
+    .box4 .image-item img {
+        max-width: 250px;
+        height: 400px;
+        filter: brightness(50%);
+        z-index: -1;
+    }
+    
+    .box4 .overlay-text {
+        position: absolute;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        padding-top: 50px;
+        margin-top: 50px;
+        justify-content: center;
+        width: 100%;
+
+    }
+    
+    .box5 {
+    grid-area: eight;
+    }
+    
+    .box6 {
+    grid-area: two;
+    } .box6 {
+    grid-area: two;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    }
+    
+    .headings {
+    display: flex;
+    flex-direction: row;
+}
+
+    .headings h2 {
+    font-size: 20px;
+    color: white; 
+    background-color: #e5bc3d; 
+    border: 2px solid #e5bc3d; 
+    padding: 10px; 
+    border-radius: 10px; 
+}
+
+    .headings h3 {
+    color: rgb(15, 14, 14);
+    padding-left: 20px;
+    font-size: 30px;
+
+}
+    .box6 h1 {
+        padding-right: 370px;
+        color: rgb(15, 14, 14);
+        font-size: 35px;
+        padding-left: 10px;
+        padding-bottom: 0;
+        margin-bottom: 0;    
+    }
+    
+    .box6 ul {
+        margin-top: 0; 
+        padding-top: 0; 
+    }
+    
+    .box7{
+        grid-area: six;
+        display: flex;
+        flex-direction: row;
+    }
+    .box7 ul {
+        background: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    
+    .box7 .image-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .box7 .image-item img {
+        max-width: 190px;
+        height: auto;
+        filter: brightness(50%);
+        z-index: -1;
+
+    }
+    
+    .box7 .overlay-text {
+        position: absolute;
+        z-index: 1;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    .box8 {
+        grid-area: seven;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Space items evenly along the row */
+    }
+    
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .image-container img {
+        max-width: 100px; /* Adjust the size of the images as needed */
+        height: auto;
+    }
+    
+    .image-container h2 {
+        font-size: 20px;
+        margin: 10px 0; /* Add some space between h2 and h3 */
+    }
+    
+    .image-container h3 {
+        font-size: 16px;
+        margin: 10px 0; /* Add some space between h3 and the next image */
+    }
+    
+    
+       .image {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+       }
+
+       li{
+        padding: 15px ;
+        text-transform: capitalize;
+        color:#fff;
+        border-bottom: 1px solid #fff ;
+        
+     }
