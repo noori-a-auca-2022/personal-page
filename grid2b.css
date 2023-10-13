@@ -73,7 +73,7 @@ ul{
 
     .box2 {
     grid-area: three;
-    background-image: url('http://act.sot.kg/img/acts.jpg');
+    background-image: url('acts.jpg');
     background-size: cover;
     color: white;
     display: flex;
